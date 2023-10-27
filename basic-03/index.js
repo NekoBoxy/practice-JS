@@ -13,11 +13,13 @@
 // };
 
 // 限制不可使用 if else
+// 發現 str 若沒給值會出錯，只好用 if 來判斷
 function isUpperCase(str) {
+  if (!str) return false;
   return str[0] === str[0].toUpperCase();
 };
 
 // // 臭臭盒說阿獺要練下面這個
-const result = isUpperCase("anOtter");
+const result = isUpperCase("ANN");
 console.log(result);
 
