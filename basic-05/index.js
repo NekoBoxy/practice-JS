@@ -13,7 +13,7 @@ function position(str) {
       voc = str[i];
       index = i;
       console.log(voc, index);
-      return;
+      return; // 因為只要找第一個，找到目標了就中止迴圈
     }
   }
   console.log(voc, index);
