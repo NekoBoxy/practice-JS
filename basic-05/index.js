@@ -21,4 +21,5 @@ function position(str) {
 
 // position("Abc"); // A 0
 // position("abc"); // -1
-position("aBc"); // B 1
+// position("aBc"); // B 1
+position(""); // -1
