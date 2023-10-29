@@ -3,20 +3,35 @@
 // 對傳回來的字串用 for 迴圈一個個拆開比對
 // 比對到第一個大寫字母就回傳值與 index，並中止迴圈
 // 完全比對失敗則回傳 -1
+// function position(str) {
+//   if (str === null) return;
+//   let voc = "";
+//   let index = -1;
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === str[i].toUpperCase()) {
+//       voc = str[i];
+//       index = i;
+//       console.log(voc, index);
+//       return; // 因為只要找第一個，找到目標了就中止迴圈
+//     }
+//   }
+//   console.log(voc, index);
+// }
+
+// Q fix ver
 function position(str) {
-  if (str === null) return;
-  let voc = "";
+  let word = "";
   let index = -1;
 
   for (let i = 0; i < str.length; i++) {
     if (str[i] === str[i].toUpperCase()) {
-      voc = str[i];
+      word = str[i];
       index = i;
-      console.log(voc, index);
-      return; // 因為只要找第一個，找到目標了就中止迴圈
+      break;
     }
   }
-  console.log(voc, index);
+  console.log(word, index);
 }
 
 // position("Abc"); // A 0

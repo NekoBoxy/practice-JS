@@ -4,5 +4,5 @@ function isAllUpperCase(str) {
   return str === str.toUpperCase();
 };
 
-const result = isAllUpperCase("aaa");
+const result = isAllUpperCase("ABCD");
 console.log(result);
