@@ -3,12 +3,16 @@
 // 回傳一個整數，此整數用來表示arr中有多少元素小於第二個參數
 function findSmallCount(arr, num) {
   let count = 0;
+
+  // 用迴圈跟 array.slice 來取出陣列中的每個值，與參數 num 做比較
   for (let i = 0; i < arr.length; i++) {
     const compare = arr.slice(i, i + 1); // 迴圈回傳陣列 index 對應之值
     if (compare < num) {
+      // 若取出值 < 參數 num, count + 1
       count++;
     }
   }
+  // 完成迴圈後回傳 count
   return count;
 };
 
