@@ -7,9 +7,11 @@
 // function stars(len) {
 //   let star = "";
 //   // for (let i = 0; i < len; i++) {
+//   // 這樣寫更好、更直觀，當 i 為 1 時，print 出一個星
 //   for (let i = 1; i <= len; i++) {
 //     star = star + "*";
-//     console.log(star);
+//   // 剛好 for + console.log 有斷行效果
+//     console.log(star); 
 //   }
 // };
 

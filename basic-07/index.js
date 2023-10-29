@@ -7,8 +7,8 @@ function findSmallCount(arr, num) {
   for (let i = 0; i < arr.length; i++) {
     // 如果用原本的 slice 切，得到的會是 obj,這樣就不能用 count 來計算總和了
     // 因限制可用的方法，故捨棄 slice
-    // const compare = arr[i]; // typeof compare 為 number
     // q fix ver
+    // const compare = arr[i]; // typeof compare 為 number
     if (arr[i] < num) {
       // 若取出值 < 參數 num, 疊加進 count
       sum += arr[i];
