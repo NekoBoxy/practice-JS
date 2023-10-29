@@ -6,8 +6,9 @@ function findSmallCount(arr, num) {
 
   // 用迴圈跟 array.slice 來取出陣列中的每個值，與參數 num 做比較
   for (let i = 0; i < arr.length; i++) {
-    const compare = arr.slice(i, i + 1); // 迴圈回傳陣列 index 對應之值
-    if (compare < num) {
+    // q fix ver
+    // const compare = arr.slice(i, i + 1); // 迴圈回傳陣列 index 對應之值
+    if (arr[i] < num) {
       // 若取出值 < 參數 num, count + 1
       count++;
     }
@@ -16,6 +17,6 @@ function findSmallCount(arr, num) {
   return count;
 };
 
-// let result = findSmallCount([1, 3, 5], 8); // 3
-let result = findSmallCount([1, 2, 3, 4, 5], 0); // 0
+let result = findSmallCount([1, 3, 5], 2); // 3
+// let result = findSmallCount([1, 2, 3, 4, 5], 0); // 0
 console.log(result);
