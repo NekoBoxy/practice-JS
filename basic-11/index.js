@@ -1,4 +1,4 @@
-// 1.1 編寫一個名為reverse的函式，參數為一個String，回傳值為順序反轉的String。
+// 2.1 編寫一個名為reverse的函式，參數為一個String，回傳值為順序反轉的String。
 
 function reverse(str) {
   let reverseStr = "";
