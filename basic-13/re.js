@@ -7,7 +7,9 @@
 function isPrime(n) {
   // 是質數 > true
   // 不是質數 > false
-  if (n === 1) return false;
+  // if (n === 1) return false;
+  // 這樣寫更好，預防 n 值為 0.1.2 或負值的狀態
+  if (n < 2) return false;
 
   for (let i = 2; i < n; i++) {
     // 若 n / i 可整除(餘數為零) => 不是質數
