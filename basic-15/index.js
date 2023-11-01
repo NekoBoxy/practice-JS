@@ -1,4 +1,16 @@
 // 2.5 編寫一個名為pyramid的函式，功能為按以下模式打印出星星層：
+// pyramid(1);
+// *
+// pyramid(2);
+// s*
+// ***
+// pyramid(4);
+// sss*
+// ss***
+// s*****
+// *******
+
+// n = 4
 // sss*
 // ss***
 // s*****
@@ -9,57 +21,34 @@
 // 	for 顯示s
 // 	for 顯示*
 
-// 用迴圈算行數 * 星數
+// n = 1; result = "*";
+// n = 2; result = ( " " x (2-1) ) + ( "**" x (2-1) )
+// n = 3; result = ( " " x 2 ) + ( "**" x 2 )
+// n = 4; result = ( " " x 3 ) + ( "**" x 3 )
+// n = 5; result = ( " " x 0 ) + ( "**" x 4 )
+// 用迴圈算行數 = n、空格與星數
 function pyramid(n) {
-  let stars = "";
-  // n = 1; stars = "*";
-  // n = 2; stars = ( " " x 3 ) + ( "**" x 1 )
-  // n = 3; stars = ( " " x 2 ) + ( "**" x 2 )
-  // n = 4; stars = ( " " x 1 ) + ( "**" x 3 )
-  // n = 5; stars = ( " " x 0 ) + ( "**" x 4 )
+  let result = "";
+
+  // 最多為 n 行
   for (let i = 1; i <= n; i++) {
-    // 最多為 n 行
-    if (n === 1) {
-      stars = "*";
-      console.log(stars);
-      break;
+    // 決定 n = 2 ~ 4 時的空格
+    for (let j = i; j <= n - 1; j++) {
+      result = result + "s";
     }
-
-    // 算空白， n = 2 ~ 3 
-    for (let j = 3; j <= 2; j--) {
+    // 決定 n = 5 後的星星數
+    // console.log((1 + (i - 1) * 2));
+    for (let k = 1; k <= (1 + (i - 1) * 2); k++) {
+      result = result + "*";
 
     }
-
-    // 算星數，n > 1
-
-
+    // 換行
+    result = result + "\\n\n";
   }
-
-
-
-
-
-  // let stars = "*";
-  // if (n === 1) {
-  //   console.log(stars);
-  // }
-  // for (let i = 1; i <= n; i++) {
-  //   for (let j = 1; j <= 3; j++) {
-  //     stars = " " + stars;
-  //     console.log(stars);
-  //     // 
-  //   }
-  //   for (let k = 3; k <= n; k++) {
-  //     stars = stars + "**";
-  //     console.log(stars);
-  //   }
-  // }
+  console.log(result);
 }
 
 // pyramid(1);
 // pyramid(2);
-pyramid(3);
 // pyramid(4);
-
-// console.log("===========");
-// console.log(pyramid(3));
+pyramid(10);
