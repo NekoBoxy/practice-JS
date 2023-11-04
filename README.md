@@ -19,7 +19,7 @@
 - [第 02 題](./basic-12/index.js)
 - [第 03 題](./basic-13/index.js)
 - [第 04 題](./basic-14/index.js)
-- [第 05 題](./basic-15/index.js)
+- [第 05 題：等差級數與 for 迴圈](./basic-15/index.js)
 - [第 06 題](./basic-16/index.js)
 - [第 07 題](./basic-17/index.js)
 ### 初階練習
