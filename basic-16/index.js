@@ -18,7 +18,7 @@ function inversePyramid(n) {
     // An = A1 +(n-1)*d
     // An = 0 + (i-1)*1
     for (let j = 1; j <= i - 1; j++) {
-      result = result + "s";
+      result = result + " ";
     }
 
     // 決定星星數量(遞減)
