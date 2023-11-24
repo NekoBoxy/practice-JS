@@ -21,9 +21,9 @@
 - [ v ] [第 04 題：回文檢驗](./basic-14/index.js)
 - [ v ] [第 05 題：空格與星星(遞增) / 等差級數(遞增)與 for 迴圈](./basic-15/index.js)
 - [ v ] [第 06 題：空格與星星(遞減) / 等差級數(遞減)與 for 迴圈](./basic-16/index.js)
-- [  ] [第 07 題：質因數分解](./basic-17/index.js)
+- [ v ] [第 07 題：質因數分解](./basic-17/index.js)
 ### 初階練習
-- [  ] [第 01 題](./beginner-01/index.js)
+- [  ] [第 01 題：將陣列內元素由小至大排序](./beginner-01/index.js)
 - [  ] [第 02 題](./beginner-02/index.js)
 - [  ] [第 03 題](./beginner-03/index.js)
 - [  ] [第 04 題](./beginner-04/index.js)
@@ -34,3 +34,5 @@
 - [  ] [第 03 題](./mid-03/index.js)
 - [  ] [第 04 題](./mid-04/index.js)
 - [  ] [第 05 題](./mid-05/index.js)
+### 未分類
+- [ v ] [第 01 題：排除陣列中的最大最小值(各一個)後，將剩餘數值加總並回傳](./codewars/index.js)
